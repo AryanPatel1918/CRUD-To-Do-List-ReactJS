@@ -93,7 +93,7 @@ p {
 }
 
 .todoItem:hover {
-  transition-duration: 200ms;
+  transition-duration: 500ms;
   border: 2px solid;
 }
 
@@ -114,12 +114,24 @@ p {
   border: none;
   background: transparent;
   cursor: pointer;
+  font-size: 20px;
 }
 
-.actionsContainer button:hover {
+.actionsContainer button:first-child {
   color: white;
 }
 
+.actionsContainer button:first-child:hover {
+  color: rgb(197, 192, 192);
+}
+
+.actionsContainer button:last-child {
+  color: rgb(221, 11, 11);
+}
+
+.actionsContainer button:last-child:hover {
+  color: rgb(192, 15, 15);
+}
 
 @media (min-width: 640px) {
   header button,
